@@ -31,6 +31,23 @@
  text-align: center;
 }
 
+.my_style{
+  background-color: #f1f6f9;
+}
+.my_style1{
+  background-color: #848ccf;
+}
+.my_text{
+   color: white;
+}
+.my_text_size{
+  font-size: 20px;
+
+body{
+  background-image: url("mtrx_final.jpg");
+
+}
+
 /*--------------------------------------------------------------------*/
     .logo{
   width: 20%;
