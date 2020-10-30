@@ -514,4 +514,6 @@ input[type=text],
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
-
+.faq_text{
+     color:white;
+}
