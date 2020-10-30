@@ -17,6 +17,10 @@
     }
 
 /*----------------new styles addition-----------------------*/
+/*----------------for tying text css effect, in order to contain "capture the flag" in one line ----------------------*/
+.box_main{
+max-width: 75%
+}
 /*------------drop shadow for boxes and images------------------------------*/
 .imagedropshadow {
     padding: 5px;
