@@ -15,7 +15,101 @@
         font-size: 1.6rem;
         margin: 10px 20px;
     }
-/*----------------apoorv new styles addition-----------------------*/
+
+/*----------------new styles addition-----------------------*/
+/*------------drop shadow for boxes and images------------------------------*/
+.imagedropshadow {
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+img:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+.dropshadowclass {
+        border: solid 1px #CCC;
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999;
+        box-shadow: 5px 5px 0px #999;
+        }
+/*-----------------------------------<!--experiment for lines-->-------------------------------------*/
+.line {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+}
+
+#line_r{
+  -webkit-animation: line_r_animation 3s infinite;
+  animation: line_r_animation 3s infinite;
+}
+
+#line_l{
+  -webkit-animation: line_l_animation 3s infinite;
+  animation: line_l_animation 3s infinite;
+}
+
+@-webkit-keyframes line_l_animation {
+    0%   {left: calc(2% + 50px); width: 0px;}
+    35%   {left: calc(2% + 0px); width: 50px;}
+    70%   {left: calc(2% + 0px); width: 0px;}
+    100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+    0%   {left: calc(2% + 50px); width: 0px;}
+    35%   {left: calc(2% + 0px); width: 50px;}
+    70%   {left: calc(2% + 0px); width: 0px;}
+    100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@-webkit-keyframes line_r_animation {
+    0%   {right: calc(2% + 50px); width: 0px;}
+    35%   {right: calc(2% + 0px); width: 50px;}
+    70%   {right: calc(2% + 0px); width: 0px;}
+    100%   {right: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+    0%   {right: calc(2% + 50px); width: 0px;}
+    35%   {right: calc(2% + 0px); width: 50px;}
+    70%   {right: calc(2% + 0px); width: 0px;}
+    100%   {right: calc(2% + 0px); width: 0px;}
+}
+/*----------typing text style (capture the flag)------------------------------------------*/
+.text-typing {
+  padding:20px 30px;
+
+  font-size:35px;
+  font-family:monospace;
+  border-radius:50px;
+}
+.text-typing h1 {
+  margin:0px;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 4s steps(22,end) forwards,
+            blink 1s infinite;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #222;
+  }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
 
 .navbar-collapse li a:hover{
 
